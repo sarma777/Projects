@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/calcStyle.css">
+</head>
+<body>
+    <section id="calc" style="margin-top: 100px;">
+        <div id="options"><label>Calculator</label><span><i title="Minimize" class="fas fa-minus" onclick="hideCalc()"></i><i title="Maximize" class="far fa-window-maximize" onclick="showCalc()"></i><i title="Close/Open" class="fas fa-times" onclick="closeClac()"></i></span></div>
+        <div id="calcDisplay" class="display">
+            <div id="previousScreen"></div>
+            <div id="currentScreen">0</div>
+        </div>
+        <div id="buttons">
+        <button onclick="dataClear()" class="spanButton1 operators">C</button>
+        <button class="operators" onclick="dataDelete()"><i class="fas fa-backspace"></i></button>
+        <button class="operators" onclick="dataOperator('/')"><i class="fas fa-divide"></i></button>
+        <button class="numbers" onclick="dataNumber('7')">7</button>
+        <button class="numbers" onclick="dataNumber('8')">8</button>
+        <button class="numbers" onclick="dataNumber('9')">9</button>
+        <button class="operators" onclick="dataOperator('*')"><i class="fas fa-times"></i></button>
+        <button class="numbers" onclick="dataNumber('4')">4</button>
+        <button class="numbers" onclick="dataNumber('5')">5</button>
+        <button class="numbers" onclick="dataNumber('6')">6</button>
+        <button class="operators" onclick="dataOperator('-')"><i class="fas fa-minus"></i></button>
+        <button class="numbers" onclick="dataNumber('1')">1</button>
+        <button class="numbers" onclick="dataNumber('2')">2</button>
+        <button class="numbers" onclick="dataNumber('3')">3</button>
+        <button class="operators" onclick="dataOperator('+')"><i class="fas fa-plus"></i></button>
+        <button class="numbers" onclick="dataNumber('0')">0</button>
+        <button class="numbers" onclick="dataDecimal('.')"><b>.</b></button>
+        <button onclick="equals('=')" class="spanButton2"><i class="fas fa-equals"></i></button>
+        </div>
+    </section>
+    <script src="./assets/js/calc.js"></script>
+</body>
+</html>

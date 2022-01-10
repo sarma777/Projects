@@ -1,0 +1,86 @@
+// create a middileware function to verify the inputParameters are not empty
+// if inputParameters has empty value then give an error "Please enter required fields"
+// if the inputParameters has values pass it to the api handler
+
+
+// for validating inputParams are not empty
+/**
+
+// import input parameters store them in a variable
+// if the all inputParams are empty give an error "Please enter all required fields".
+if(condition) {
+
+} 
+// if only some of the inputParams are empty give an error "Please enter required fields"
+else if(condition){
+
+}
+next()
+*/
+
+
+
+// for register api hanler
+/**
+
+// import input parameters store them in a variable
+// use Database query to check the email id is already in the db or not
+if(Database has already email in it) {
+    give an error "Already registered with this email!"
+} else {
+    // has the password using bcrypt to secure the password
+    // use Database query to insert inputParameter values into Database
+    // store hashed password not the password which is entered by the user
+}
+
+*/
+
+
+// for login api hanler
+/**
+
+// import input parameters store them in a variable
+// use Database query to check the email id is already in the db or not
+if(Database has already email in it) {
+    // check the the inputParameter password with the password in the database using bcrypt
+    // if the passwords do not match give an error
+    if(condition) {
+        // give an error "Please check your credentials!"
+    }
+} else {
+    // if the passwords matched
+// asign jwt token for the email and send it
+// give an response "Login successfull"
+}
+
+
+
+
+// for update api hanler
+/**
+
+// import input parameters store them in a variable
+// check if the user has a token of not
+if(condition) {
+    // if user does not have token give an error "Not authorized".
+    }
+} else {
+    // get the token from the authorization header
+	// create a empty variable to hold the token detail
+	if (condition) {
+	// if token doe not match an error "Not authorized".
+} else {
+	// pass the token details to the empty variable
+}
+	// get the requester email from the token details
+	// Database query to check the requeter email is in the Database or not
+	if(condition) {
+	// if emails does not match give an error
+} else {
+	// if the email matched store the details inputParam details into the Database
+	// hash the password before toring it in the Database
+	// give an response "Updated successfully"
+}
+*/
+
+

@@ -1,0 +1,8 @@
+#enviroinment files
+.env
+#packages
+node_modules
+#build files
+build
+#eslint
+.eslint.json

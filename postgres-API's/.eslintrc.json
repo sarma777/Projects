@@ -1,0 +1,63 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": ["plugin:@typescript-eslint/recommended"],
+    "parserOptions": { "ecmaVersion": 2015, "sourceType": "module" },
+    "rules": {
+        "camelcase": "off",
+        "no-console": "off",
+        "no-tabs": "off",
+        "object-curly-newline": [
+          "error",
+          {
+            "multiline": true,
+            "consistent": true,
+            "minProperties": 3
+          }
+        ],
+        "object-property-newline": [
+          "error",
+          {
+            "allowAllPropertiesOnSameLine": false
+          }
+        ],
+        "indent": [
+          "error",
+          "tab",
+          {
+            "SwitchCase": 1
+          }
+        ],
+        "quotes": [
+          2,
+          "single",
+          {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+          }
+        ],
+        "max-len": [
+          "error",
+          {
+            "code": 300
+          }
+        ],
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true
+          }
+        ],
+        "prefer-const": [
+          "error",
+          {
+            "destructuring": "all"
+          }
+        ],
+        "no-use-before-define": [
+          "error",
+          {
+            "functions": false
+          }
+        ]
+      }
+  }
